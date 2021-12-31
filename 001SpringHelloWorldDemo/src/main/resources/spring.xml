@@ -6,9 +6,28 @@
 	<bean id="helloWorldBean" class="com.createiq.bean.HelloWorldBean">
 
 	</bean>
-	
+
 	<bean id="welcomeBean" class="com.createiq.bean.WelcomeBean">
 
+	</bean>
+	
+	<bean id="address" class="com.createiq.bean.Address">
+	   <property name="aid" value="1001"></property>
+	   <property name="aloc" value="SKLM"></property>
+	</bean>
+
+	<!-- <bean id="employee" class="com.createiq.bean.Employee">
+		<property name="eid" value="1"></property>
+		<property name="ename" value="Balaji"></property>
+		<property name="esal" value="23000.00"></property>
+		<property name="address" ref="address"></property>
+	</bean> -->
+	
+	<bean id="employee" class="com.createiq.bean.Employee">
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="Balaji"></constructor-arg>
+		<constructor-arg value="34000.00"></constructor-arg>
+		<constructor-arg ref="address"></constructor-arg>
 	</bean>
 
 </beans>
