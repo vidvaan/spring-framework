@@ -16,5 +16,9 @@ public class EmployeeController {
 		System.out.println("Employee Controller Add method : " + employee);
 		employeeService.add(employee);
 	}
+	
+	public void update(Employee employee) {
+		employeeService.update(employee);
+	}
 
 }

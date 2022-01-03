@@ -16,4 +16,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		System.out.println("Employee Service Add method : " + employee);
 		employeeDAO.add(employee);
 	}
+
+	public void update(Employee employee) {
+		employeeDAO.update(employee);
+	}
 }
