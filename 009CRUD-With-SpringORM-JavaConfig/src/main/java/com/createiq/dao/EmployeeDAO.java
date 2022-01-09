@@ -1,5 +1,7 @@
 package com.createiq.dao;
 
+import java.util.List;
+
 import com.createiq.model.Employee;
 
 public interface EmployeeDAO {
@@ -9,5 +11,9 @@ public interface EmployeeDAO {
 	 void update(Employee employee);
 	 
 	 void deleteById(Integer eid);
+	 
+	 List<Employee> findAll();
+	 
+	 List<Employee> findByName(String name);
 
 }
